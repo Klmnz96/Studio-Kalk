@@ -1,0 +1,86 @@
+{
+  "projects": [
+    {
+      "id": "courtyard-house",
+      "title": "Haus am Patio",
+      "category": "Wohnbau",
+      "location": "Alicante, ES",
+      "year": 2021,
+      "area": "220 m²",
+      "status": "Fertiggestellt",
+      "summary": "Ein weißer Baukörper aus ineinandergeschobenen Kuben, der sich um einen begrünten Innenhof legt.",
+      "description": [
+        "Das Haus organisiert sich um einen zentralen Patio. Nach außen zeigt es sich als geschlossene, streng gegliederte Wandscheibe; zum Hof hin öffnet es sich vollständig und holt Licht und Vegetation ins Innere.",
+        "Eine skulptural aus dem Volumen geschnittene Treppe aus geglättetem Kalkputz führt ins Obergeschoss. Wenige, präzise gesetzte Öffnungen rahmen den Blick in den Garten und die Pinien dahinter."
+      ],
+      "thumb": "assets/img/signature-house.jpg",
+      "images": [
+        "assets/img/signature-house.jpg",
+        "assets/img/staircase.jpg",
+        "assets/img/kitchen.jpg",
+        "assets/img/garden.jpg"
+      ]
+    },
+    {
+      "id": "city-library",
+      "title": "Stadtbibliothek",
+      "category": "Kulturbau",
+      "location": "Malmö, SE",
+      "year": 2018,
+      "area": "6.800 m²",
+      "status": "Fertiggestellt",
+      "summary": "Ein offenes Bücherregal über fünf Ebenen, um ein zenital belichtetes Atrium herum organisiert.",
+      "description": [
+        "Die Bibliothek stapelt ihre Geschosse als umlaufende Galerien um einen zentralen Luftraum. Freitreppen verbinden die Ebenen diagonal und machen den Weg durch die Sammlung zum Raumerlebnis.",
+        "Eine raumhohe Verglasung nach Süden verbindet den Lesesaal mit dem angrenzenden Park. Weiß lasierte Regale und ein durchgehender Eichenboden halten die Materialität bewusst ruhig."
+      ],
+      "thumb": "assets/img/signature-library.jpg",
+      "images": [
+        "assets/img/signature-library.jpg",
+        "assets/img/library-top.jpg",
+        "assets/img/library-staircase.jpg",
+        "assets/img/bookshelf.jpg"
+      ]
+    },
+    {
+      "id": "waterfront-theatre",
+      "title": "Musiktheater am Wasser",
+      "category": "Kulturbau",
+      "location": "Valencia, ES",
+      "year": 2016,
+      "area": "37.000 m²",
+      "status": "Fertiggestellt",
+      "summary": "Ein weißer Schalenkörper über einem flachen Wasserbecken, dessen geschwungenes Dach weit auskragt.",
+      "description": [
+        "Der Bau erhebt sich als freigeformte Betonschale aus einem umlaufenden Wasserspiegel. Das auskragende Dach fasst die Freiräume und gibt dem Haus aus der Ferne seine Silhouette.",
+        "Im Inneren erschließen breite Rampen und eine gewendelte Sichtbetontreppe die Foyers. Oberlichter führen Tageslicht tief in die Wandelhallen."
+      ],
+      "thumb": "assets/img/signature-museum.jpg",
+      "images": [
+        "assets/img/signature-museum.jpg",
+        "assets/img/museum-garden.jpg",
+        "assets/img/staircase-museum.jpg",
+        "assets/img/interior-hall.jpg"
+      ]
+    },
+    {
+      "id": "thermal-bath",
+      "title": "Thermalbad",
+      "category": "Bestand / Sanierung",
+      "location": "Budapest, HU",
+      "year": 2020,
+      "area": "4.500 m²",
+      "status": "Fertiggestellt",
+      "summary": "Behutsame Instandsetzung eines neobarocken Thermalbades und seiner Freibecken.",
+      "description": [
+        "Der Eingriff konzentriert sich auf die Wiederherstellung der historischen Putz- und Steinoberflächen sowie die technische Ertüchtigung der Becken.",
+        "Neue Einbauten treten bewusst zurück und ordnen sich der bestehenden Anlage unter."
+      ],
+      "thumb": "assets/img/signature-thermal-bath.jpg",
+      "images": [
+        "assets/img/signature-thermal-bath.jpg",
+        "assets/img/pool-view.jpg"
+      ]
+    }
+  ]
+}
