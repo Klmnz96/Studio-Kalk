@@ -1,136 +1,67 @@
-/* bricolage-grotesque-200 - latin */
+/* ===========================================================
+   Schriften – nur die Schnitte, die das Projekt wirklich nutzt
+   Display = Bricolage Grotesque (Überschriften, Logo)
+   Body    = Hanken Grotesk (Fließtext, Navigation)
+   =========================================================== */
+
+/* ---------- Bricolage Grotesque ---------- */
+
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: "Bricolage Grotesque";
-  font-style: normal;
-  font-weight: 200;
-  src: url("../assets/fonts/bricolage-grotesque-v9-latin-200.woff2")
-    format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-}
-/* bricolage-grotesque-300 - latin */
-@font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: "Bricolage Grotesque";
-  font-style: normal;
-  font-weight: 300;
-  src: url("../assets/fonts/bricolage-grotesque-v9-latin-300.woff2")
-    format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-}
-/* bricolage-grotesque-regular - latin */
-@font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-display: swap;
   font-family: "Bricolage Grotesque";
   font-style: normal;
   font-weight: 400;
-  src: url("../assets/fonts/bricolage-grotesque-v9-latin-regular.woff2")
-    format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url("../assets/fonts/bricolage-grotesque-v9-latin-regular.woff2") format("woff2");
 }
-/* bricolage-grotesque-500 - latin */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-display: swap;
   font-family: "Bricolage Grotesque";
   font-style: normal;
   font-weight: 500;
-  src: url("../assets/fonts/bricolage-grotesque-v9-latin-500.woff2")
-    format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url("../assets/fonts/bricolage-grotesque-v9-latin-500.woff2") format("woff2");
 }
-/* bricolage-grotesque-600 - latin */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-display: swap;
   font-family: "Bricolage Grotesque";
   font-style: normal;
   font-weight: 600;
-  src: url("../assets/fonts/bricolage-grotesque-v9-latin-600.woff2")
-    format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url("../assets/fonts/bricolage-grotesque-v9-latin-600.woff2") format("woff2");
 }
-/* bricolage-grotesque-700 - latin */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-display: swap;
   font-family: "Bricolage Grotesque";
   font-style: normal;
   font-weight: 700;
-  src: url("../assets/fonts/bricolage-grotesque-v9-latin-700.woff2")
-    format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url("../assets/fonts/bricolage-grotesque-v9-latin-700.woff2") format("woff2");
 }
-/* bricolage-grotesque-800 - latin */
+
+/* ---------- Hanken Grotesk ---------- */
+
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: "Bricolage Grotesque";
-  font-style: normal;
-  font-weight: 800;
-  src: url("../assets/fonts/bricolage-grotesque-v9-latin-800.woff2")
-    format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-}
-/* hanken-grotesk-100 - latin */
-@font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: "Hanken Grotesk";
-  font-style: normal;
-  font-weight: 100;
-  src: url("../assets/fonts/hanken-grotesk-v12-latin-100.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-}
-/* hanken-grotesk-200 - latin */
-@font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: "Hanken Grotesk";
-  font-style: normal;
-  font-weight: 200;
-  src: url("../assets/fonts/hanken-grotesk-v12-latin-200.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-}
-/* hanken-grotesk-300 - latin */
-@font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: "Hanken Grotesk";
-  font-style: normal;
-  font-weight: 300;
-  src: url("../assets/fonts/hanken-grotesk-v12-latin-300.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-}
-/* hanken-grotesk-regular - latin */
-@font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-display: swap;
   font-family: "Hanken Grotesk";
   font-style: normal;
   font-weight: 400;
-  src: url("../assets/fonts/hanken-grotesk-v12-latin-regular.woff2")
-    format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url("../assets/fonts/hanken-grotesk-v12-latin-regular.woff2") format("woff2");
 }
-/* hanken-grotesk-500 - latin */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-display: swap;
   font-family: "Hanken Grotesk";
   font-style: normal;
   font-weight: 500;
-  src: url("../assets/fonts/hanken-grotesk-v12-latin-500.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url("../assets/fonts/hanken-grotesk-v12-latin-500.woff2") format("woff2");
 }
-/* hanken-grotesk-600 - latin */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-display: swap;
   font-family: "Hanken Grotesk";
   font-style: normal;
   font-weight: 600;
-  src: url("../assets/fonts/hanken-grotesk-v12-latin-600.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url("../assets/fonts/hanken-grotesk-v12-latin-600.woff2") format("woff2");
 }
-/* hanken-grotesk-700 - latin */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-display: swap;
   font-family: "Hanken Grotesk";
   font-style: normal;
   font-weight: 700;
-  src: url("../assets/fonts/hanken-grotesk-v12-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-}
-/* hanken-grotesk-800 - latin */
-@font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: "Hanken Grotesk";
-  font-style: normal;
-  font-weight: 800;
-  src: url("../assets/fonts/hanken-grotesk-v12-latin-800.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-}
-/* hanken-grotesk-900 - latin */
-@font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: "Hanken Grotesk";
-  font-style: normal;
-  font-weight: 900;
-  src: url("../assets/fonts/hanken-grotesk-v12-latin-900.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url("../assets/fonts/hanken-grotesk-v12-latin-700.woff2") format("woff2");
 }
