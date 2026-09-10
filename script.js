@@ -14,13 +14,32 @@ async function loadProjects() {
   const projectGrid = document.querySelector("#featured-grid, #project-grid");
   if (!projectGrid) return;
 
-  const response = await fetch("projects.json");
-  const data = await response.json();
+  const projectsResponse = await fetch("projects.json");
+  const projectsData = await projectsResponse.json();
 
-  const isFeatured = projectGrid.id === "featured-grid";
-  const list = isFeatured ? data.projects.slice(0, 3) : data.projects;
+  const visibleProjects =
+    projectGrid.id === "featured-grid"
+      ? projectsData.projects.slice(0, 3)
+      : projectsData.projects;
 
-  projectGrid.innerHTML = list.map(projectCard).join("");
+  projectGrid.innerHTML = visibleProjects.map(projectCard).join("");
+}
+
+async function loadProjectDetail() {
+  const projectContainer = document.querySelector("#project");
+  if (!projectContainer) return;
+
+  const urlParams = new URLSearchParams(window.location.search);
+  const projectId = urlParams.get("id");
+
+  const projectsResponse = await fetch("projects.json");
+  const projectsData = await projectsResponse.json();
+
+  const activeProject = projectsData.projects.find(
+    (project) => project.id === projectId,
+  );
+
+  console.log(activeProject);
 }
 
 function init() {
