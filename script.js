@@ -1,24 +1,32 @@
-const header = document.querySelector(".site-header");
-const hero = document.querySelector(".hero");
+function initHeader() {
+  const header = document.querySelector(".site-header");
+  const hero = document.querySelector(".hero");
+  if (!header) return;
 
-function updateHeader() {
-  // ganz oben -> transparent, sonst fest
-  header.classList.toggle("is-top", Boolean(hero) && window.scrollY < 40);
+  const update = () =>
+    header.classList.toggle("is-top", Boolean(hero) && window.scrollY < 40);
+
+  update();
+  window.addEventListener("scroll", update, { passive: true });
 }
 
-updateHeader();
-window.addEventListener("scroll", updateHeader, { passive: true });
-
 async function loadProjects() {
+  const projectGrid = document.querySelector("#featured-grid, #project-grid");
+  if (!projectGrid) return;
+
   const response = await fetch("projects.json");
   const data = await response.json();
 
-  const projectGrid = document.querySelector("#featured-grid");
-  if (!projectGrid) return;
+  const isFeatured = projectGrid.id === "featured-grid";
+  const list = isFeatured ? data.projects.slice(0, 3) : data.projects;
 
-  const projectCards = data.projects.slice(0, 3).map(projectCard).join("");
-
-  projectGrid.innerHTML = projectCards;
+  projectGrid.innerHTML = list.map(projectCard).join("");
 }
 
-loadProjects();
+function init() {
+  initHeader();
+  loadProjects();
+  loadProjectDetail();
+}
+
+init();
