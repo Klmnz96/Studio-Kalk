@@ -237,6 +237,51 @@
   filter: invert(1);
 }
 
+/* Projekt-Grid + Karten */
+.project-grid {
+  display: grid;
+  gap: var(--space-lg);
+  margin-top: var(--space-xl);
+}
+
+.project-card a {
+  display: block;
+}
+
+.project-card figure {
+  margin: 0;
+  overflow: hidden;
+  background: var(--surface);
+}
+
+.project-card img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  filter: grayscale(1);
+  object-fit: cover;
+  transition: transform 200ms ease;
+}
+
+.project-card a:hover img {
+  transform: scale(1.03);
+  filter: grayscale(0);
+  transition: transform 200ms ease;
+}
+
+.project-card .eyebrow {
+  margin-top: var(--space-sm);
+}
+
+.project-card h3 {
+  margin-top: var(--space-3xs);
+  font-size: var(--h3);
+}
+
+.section-featured .link-arrow {
+  margin-top: var(--space-xl);
+}
+
 /* Mobile Navigation */
 
 @media (max-width: 768px) {
@@ -253,5 +298,15 @@
     grid-template-columns: 1.5fr 1fr 1fr;
     gap: var(--space-2xl);
     align-items: start;
+  }
+}
+
+@media (min-width: 768px) {
+  .section-featured .project-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  #project-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-2xl) var(--space-lg);
   }
 }

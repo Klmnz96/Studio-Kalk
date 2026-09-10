@@ -12,8 +12,13 @@ window.addEventListener("scroll", updateHeader, { passive: true });
 async function loadProjects() {
   const response = await fetch("projects.json");
   const data = await response.json();
-  console.log(data);
-  console.log(projectCard(data.projects[0]));
+
+  const projectGrid = document.querySelector("#featured-grid");
+  if (!projectGrid) return;
+
+  const projectCards = data.projects.slice(0, 3).map(projectCard).join("");
+
+  projectGrid.innerHTML = projectCards;
 }
 
 loadProjects();
