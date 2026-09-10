@@ -39,7 +39,12 @@ async function loadProjectDetail() {
     (project) => project.id === projectId,
   );
 
-  console.log(activeProject);
+  if (!activeProject) {
+    projectContainer.innerHTML = `<p>Projekt nicht gefunden.</p>`;
+    return;
+  }
+
+  projectContainer.innerHTML = projectDetail(activeProject);
 }
 
 function init() {
