@@ -8,3 +8,12 @@ function updateHeader() {
 
 updateHeader();
 window.addEventListener("scroll", updateHeader, { passive: true });
+
+async function loadProjects() {
+  const response = await fetch("projects.json");
+  const data = await response.json();
+  console.log(data);
+  console.log(projectCard(data.projects[0]));
+}
+
+loadProjects();
