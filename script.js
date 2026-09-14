@@ -47,10 +47,39 @@ async function loadProjectDetail() {
   projectContainer.innerHTML = projectDetail(activeProject);
 }
 
+function initNav() {
+  const header = document.querySelector(".site-header");
+  const navToggle = document.querySelector(".nav-toggle");
+  if (!navToggle) return;
+
+  let scrollPosition = 0;
+
+  navToggle.addEventListener("click", () => {
+    const isNavOpen = header.classList.toggle("nav-open");
+    navToggle.setAttribute("aria-expanded", isNavOpen);
+
+    const icon = navToggle.querySelector("img");
+    icon.src = isNavOpen ? "assets/icons/close.svg" : "assets/icons/menu.svg";
+
+    if (isNavOpen) {
+      scrollPosition = window.scrollY;
+      document.body.style.position = "fixed";
+      document.body.style.top = `-${scrollPosition}px`;
+      document.body.style.width = "100%";
+    } else {
+      document.body.style.position = "";
+      document.body.style.top = "";
+      document.body.style.width = "";
+      window.scrollTo(0, scrollPosition);
+    }
+  });
+}
+
 function init() {
   initHeader();
   loadProjects();
   loadProjectDetail();
+  initNav();
 }
 
 init();
